@@ -810,8 +810,6 @@ function ToggleClothing(whic, extra)
 	if Cooldown then return end
 	local Toggle = drawables[which] if extra then Toggle = Extras[which] end
 	local Ped = PlayerPedId()
-	print(ped,"ped")
-	print(Toggle.Drawable,"drawable")
 	local Cur = { -- Lets check what we are currently wearing.
 		Drawable = GetPedDrawableVariation(Ped, Toggle.Drawable),
 		Id = Toggle.Drawable,
